@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>小仙女生日快乐-Ioveyou</title>
+
+
+  <style type="text/css">
+  *{margin:0px;padding:0px;}
+  body{background:url("images/bg.jpg");overflow:hidden;}
+  .product{width:240px;height:240px;position:absolute;bottom:90px;right:0px;left:0px;margin:auto;perspective:800px;}
+  .product .details{transform-style:preserve-3D;width:240px;height:240px;
+  -webkit-animation:rotating 10S linear infinite;}
+   .product .details li{list-style:none;width:200px;height:200px;border:5px solid #DE4693;position:absolute;}
+.product .details li img{width:200px;height:200px;}
+.product .details li:nth-child(1){transform:rotateY(0deg) translateZ(180px);}
+.product .details li:nth-child(2){transform:rotateY(60deg) translateZ(180px);}
+.product .details li:nth-child(3){transform:rotateY(120deg) translateZ(180px);}
+.product .details li:nth-child(4){transform:rotateY(180deg) translateZ(180px);}
+.product .details li:nth-child(5){transform:rotateY(240deg) translateZ(180px);}
+.product .details li:nth-child(6){transform:rotateY(300deg) translateZ(180px);}
+@-webkit-keyframes rotating{
+   from{transform:rotateY(0deg);}
+   to{transform:rotateY(360deg);}
+}
+.product .details:hover{-webkit-animation-play-state:paused;}
+.details li:hover img{transform:scale(1.2);border:5px solid #DE4693;}
+.xin{position:absolute;bottom:90px;left:60px;
+-webkit-animation:xin 10S linear infinite;}
+@-webkit-keyframes xin{
+   0%{bottom:90px;left:60px;opacity:1;}
+   20%{bottom:380px;left:220px;opacity:0;}
+   40%{bottom:480px;left:600px;opacity:1;}
+   60%{bottom:300px;left:1150px;opacity:0;}
+   80%{bottom:90px;left:960px;opacity:1;}
+   100%{bottom:-80px;left:700px;opacity:0;}
+}
+  </style>
+
+
+</head>
+  <body>
+    <div class="xin"><img src="images/xin.png"/></div>
+    <div class="product">
+      <audio src="images/loveymin.mp3" autoplay loop></audio>
+    <div class="details">
+    <ul>
+      <li><img src="images/1.jpg"/></li>
+      <li><img src="images/2.jpg"/></li>
+      <li><img src="images/3.jpg"/></li>
+      <li><img src="images/4.jpg"/></li>
+      <li><img src="images/5.jpg"/></li>
+      <li><img src="images/6.jpg"/></li>
+    </ul>
+    </div>
+    </div>
+  </body>
+</html>
